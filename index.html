@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -33,7 +33,7 @@
                             <p class="bg-[#2F2941] rounded-b-xl text-white px-3 pb-3">Don't watch keyboard while playing...</p>
                         </div>
                         <div class="flex justify-center items-center h-full">
-                            <p class=" text-5xl font-bold">Y</p>
+                            <p id="playScreen" class=" text-5xl font-bold">Y</p>
                         </div>
                     </div>
 
@@ -42,47 +42,47 @@
                 <div>
                     <!--keyboard-->
                     <div class="flex justify-center gap-1 my-1 w-full">
-                        <kbd class="kbd bg-white text-black font-semibold">q</kbd>
-                        <kbd class="kbd bg-white text-black font-semibold">w</kbd>
-                        <kbd class="kbd bg-white text-black font-semibold">e</kbd>
-                        <kbd class="kbd bg-white text-black font-semibold">r</kbd>
-                        <kbd class="kbd bg-white text-black font-semibold">t</kbd>
-                        <kbd class="kbd bg-white text-black font-semibold">y</kbd>
-                        <kbd class="kbd bg-white text-black font-semibold">u</kbd>
-                        <kbd class="kbd bg-white text-black font-semibold">i</kbd>
-                        <kbd class="kbd bg-white text-black font-semibold">o</kbd>
-                        <kbd class="kbd bg-white text-black font-semibold">p</kbd>
+                        <kbd id="w" class="kbd text-black font-semibold">w</kbd>
+                        <kbd id="q" class="kbd text-black font-semibold">q</kbd>
+                        <kbd id="e" class="kbd text-black font-semibold">e</kbd>
+                        <kbd id="r" class="kbd text-black font-semibold">r</kbd>
+                        <kbd id="t" class="kbd text-black font-semibold">t</kbd>
+                        <kbd id="y" class="kbd text-black font-semibold">y</kbd>
+                        <kbd id="u" class="kbd text-black font-semibold">u</kbd>
+                        <kbd id="i" class="kbd text-black font-semibold">i</kbd>
+                        <kbd id="o" class="kbd text-black font-semibold">o</kbd>
+                        <kbd id="p" class="kbd text-black font-semibold">p</kbd>
                     </div>
                     <div class="flex justify-center gap-1 my-1 w-full">
-                        <kbd class="kbd bg-white text-black font-semibold">a</kbd>
-                        <kbd class="kbd bg-white text-black font-semibold">s</kbd>
-                        <kbd class="kbd bg-white text-black font-semibold">d</kbd>
-                        <kbd class="kbd bg-white text-black font-semibold">f</kbd>
-                        <kbd class="kbd bg-white text-black font-semibold">g</kbd>
-                        <kbd class="kbd bg-white text-black font-semibold">h</kbd>
-                        <kbd class="kbd bg-white text-black font-semibold">j</kbd>
-                        <kbd class="kbd bg-white text-black font-semibold">k</kbd>
-                        <kbd class="kbd bg-white text-black font-semibold">l</kbd>
+                        <kbd id="a" class="kbd text-black font-semibold">a</kbd>
+                        <kbd id="s" class="kbd text-black font-semibold">s</kbd>
+                        <kbd id="d" class="kbd text-black font-semibold">d</kbd>
+                        <kbd id="f" class="kbd text-black font-semibold">f</kbd>
+                        <kbd id="g" class="kbd text-black font-semibold">g</kbd>
+                        <kbd id="h" class="kbd text-black font-semibold">h</kbd>
+                        <kbd id="j" class="kbd text-black font-semibold">j</kbd>
+                        <kbd id="k" class="kbd text-black font-semibold">k</kbd>
+                        <kbd id="l" class="kbd text-black font-semibold">l</kbd>
                     </div>
                     <div class="flex justify-center gap-1 my-1 w-full">
-                        <kbd class="kbd bg-white text-black font-semibold">z</kbd>
-                        <kbd class="kbd bg-white text-black font-semibold">x</kbd>
-                        <kbd class="kbd bg-white text-black font-semibold">c</kbd>
-                        <kbd class="kbd bg-white text-black font-semibold">v</kbd>
-                        <kbd class="kbd bg-white text-black font-semibold">b</kbd>
-                        <kbd class="kbd bg-white text-black font-semibold">n</kbd>
-                        <kbd class="kbd bg-white text-black font-semibold">m</kbd>
-                        <kbd class="kbd bg-white text-black font-semibold">/</kbd>
+                        <kbd id="z" class="kbd text-black font-semibold">z</kbd>
+                        <kbd id="x" class="kbd text-black font-semibold">x</kbd>
+                        <kbd id="c" class="kbd text-black font-semibold">c</kbd>
+                        <kbd id="v" class="kbd text-black font-semibold">v</kbd>
+                        <kbd id="b" class="kbd text-black font-semibold">b</kbd>
+                        <kbd id="n" class="kbd text-black font-semibold">n</kbd>
+                        <kbd id="m" class="kbd text-black font-semibold">m</kbd>
+                        <kbd id="/" class="kbd text-black font-semibold">/</kbd>
                     </div>
                 </div>
                 <div>
                     <!--life span and score-->
                     <div class="grid grid-cols-2 justify-center">
                         <div>
-                            <p class="text-center w-32 mx-auto rounded-3xl text-white font-semibold p-1 bg-[#894189]">Life: 1</p>
+                            <p class="text-center w-32 mx-auto rounded-3xl text-white font-semibold p-1 bg-[#894189]">Life: <span id="lifePoint">3</span> </p>
                         </div>
                         <div>
-                            <p class="text-center w-32 mx-auto rounded-3xl text-white font-semibold p-1 bg-[#894189]">Score: 1</p>
+                            <p class="text-center w-32 mx-auto rounded-3xl text-white font-semibold p-1 bg-[#894189]">Score: <span id="scorePoint">0</span></p>
                         </div>
                     </div>
                 </div>
