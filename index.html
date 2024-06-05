@@ -14,17 +14,17 @@
 <body class="min-h-screen bg-[#010313] bg-[url(images/background.png)] bg-no-repeat bg-center">
     <main>
         <!--home section-->
-        <section class="min-h-screen flex justify-center items-center hidden">
+        <section id="homeSection" class="min-h-screen flex justify-center items-center">
             <div class="space-y-5 text-center">
                 <h1 class="text-6xl text-white font-black">ALPHABET CLASH CLONE</h1>
-                <p class="text-white font-semibold">Unleash Your Keyboard Kung Fu : Press “Enter” to Play</p>
-                <button class="btn btn-outline bg-white text-black border-0 hover:bg-transparent hover:text-white hover:border-2">Play
+                <p class="text-white font-semibold">Unleash Your Keyboard Kung Fu : Press “Enter” or play now button to Play</p>
+                <button onclick="playNow()" class="btn btn-outline bg-white text-black border-0 hover:bg-transparent hover:text-white hover:border-2">Play
                     Now</button>
             </div>
 
         </section>
         <!--play ground section-->
-        <section>
+        <section id="playSection" class="hidden p-4">
             <div>
                 <div class="flex justify-center pt-4">
                     <!--screen-->
@@ -90,8 +90,12 @@
 
         </section>
         <!--score section-->
-        <section>
-
+        <section class="min-h-screen flex justify-center items-center hidden">
+            <div class="border text-center p-8 rounded-xl space-y-6 bg-[#FFFFFF33] text-white">
+                <p class="text-4xl font-bold">Score: 14</p>
+                <button class="btn btn-outline bg-white text-black border-0 hover:bg-transparent hover:text-white hover:border-2">Play Again</button>
+                <p>Practice will make you Pro</p>
+            </div>
         </section>
     </main>
     
