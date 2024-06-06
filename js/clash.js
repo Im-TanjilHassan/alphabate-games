@@ -70,6 +70,39 @@ document.addEventListener('keyup', function kbdBtnPress(event) {
 
         getLifeSpanTag.innerText = newLife;
 
+        if (currentLife <= 1) {
+            //hide the play section
+            const hidePlaySection = document.getElementById('playSection');
+            hidePlaySection.classList.add('hidden');
+
+            //show result section
+            const resultSection = document.getElementById('result-section');
+            resultSection.classList.remove('hidden');
+
+            //show result
+            const getTotalScore = document.getElementById('scorePoint').innerText
+            const result = document.getElementById('result');
+            result.innerText = getTotalScore;
+        }
+
     }
 
 })
+
+function playAgain() {
+    //hide result section
+    const totalResultSection = document.getElementById('result-section');
+    totalResultSection.classList.add('hidden');
+
+    //show new game start section
+    const newGame = document.getElementById('playSection');
+    newGame.classList.remove('hidden');
+
+    //reset life
+    const resetLife = document.getElementById('lifePoint');
+    resetLife.innerText = 3;
+
+    //reset score
+    const resetScore = document.getElementById('scorePoint');
+    resetScore.innerText = 0;
+}

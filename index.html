@@ -90,10 +90,10 @@
 
         </section>
         <!--score section-->
-        <section class="min-h-screen flex justify-center items-center hidden">
+        <section id="result-section" class="min-h-screen flex justify-center items-center hidden">
             <div class="border text-center p-8 rounded-xl space-y-6 bg-[#FFFFFF33] text-white">
-                <p class="text-4xl font-bold">Score: 14</p>
-                <button class="btn btn-outline bg-white text-black border-0 hover:bg-transparent hover:text-white hover:border-2">Play Again</button>
+                <p class="text-4xl font-bold">Score: <span id="result">0</span></p>
+                <button onclick="playAgain()" class="btn btn-outline bg-white text-black border-0 hover:bg-transparent hover:text-white hover:border-2">Play Again</button>
                 <p>Practice will make you Pro</p>
             </div>
         </section>
